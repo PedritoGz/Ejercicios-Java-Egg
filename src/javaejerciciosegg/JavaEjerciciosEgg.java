@@ -10,14 +10,13 @@ public class JavaEjerciciosEgg {
        Scanner leer = new Scanner(System.in);
         
        System.out.print("Ingresa un num: ");
-       double num = leer.nextDouble();
-       double doble = num*num; 
-       double triple = num*num*num;
-       System.out.println("El doble: " + doble);
-       System.out.println("El triple: " + triple);
-       System.out.println("La raiz: " + Math.sqrt(num));
+       int num = leer.nextInt();
        
-        
+       if( num % 2 == 0 ){
+        System.out.println("Es par");   
+       }else{
+           System.out.println("Es inpar");
+       } 
     }
     
     
