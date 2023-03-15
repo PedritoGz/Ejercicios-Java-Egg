@@ -9,13 +9,13 @@ public class JavaEjerciciosEgg {
     public static void main(String[] args) {
        Scanner leer = new Scanner(System.in);
         
-       System.out.print("Ingresa el nombre del jugador de la historia: ");
+       System.out.println("Ingresa una frase o palabra de 8 caracteres: ");
        String frase = leer.nextLine();
        
-       if( frase.equals("Messi")){
-        System.out.println("Correcto Pibe, Somos campeones del Mundo");   
+       if( frase.length() == 8){
+        System.out.println("Correcto");   
        }else{
-           System.out.println("Incorrecto, no sabes nada de fut");
+           System.out.println("Incorrecto");
        } 
     }
     
