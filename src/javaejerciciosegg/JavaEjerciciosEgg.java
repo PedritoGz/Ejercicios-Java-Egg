@@ -9,10 +9,10 @@ public class JavaEjerciciosEgg {
     public static void main(String[] args) {
        Scanner leer = new Scanner(System.in);
         
-       System.out.println("Ingresa una frase o palabra de 8 caracteres: ");
+       System.out.println("Ingresa una frase: ");
        String frase = leer.nextLine();
-       
-       if( frase.length() == 8){
+       String letra = frase.substring(0,1);
+       if( "A".equals(letra)){
         System.out.println("Correcto");   
        }else{
            System.out.println("Incorrecto");
