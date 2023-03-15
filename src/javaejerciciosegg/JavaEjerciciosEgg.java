@@ -9,13 +9,13 @@ public class JavaEjerciciosEgg {
     public static void main(String[] args) {
        Scanner leer = new Scanner(System.in);
         
-       System.out.print("Ingresa un num: ");
-       int num = leer.nextInt();
+       System.out.print("Ingresa el nombre del jugador de la historia: ");
+       String frase = leer.nextLine();
        
-       if( num % 2 == 0 ){
-        System.out.println("Es par");   
+       if( frase.equals("Messi")){
+        System.out.println("Correcto Pibe, Somos campeones del Mundo");   
        }else{
-           System.out.println("Es inpar");
+           System.out.println("Incorrecto, no sabes nada de fut");
        } 
     }
     
