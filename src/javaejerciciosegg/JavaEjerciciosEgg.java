@@ -15,27 +15,34 @@ public class JavaEjerciciosEgg {
     public static void main(String[] args) {
         
        Scanner leer = new Scanner(System.in);
-       int num [][] = new int [4][4];
-       
-       for(int i = 0; i < 4; i++){
-           for(int j = 0; j < 4; j++){
-               num[i][j] = (int) (Math.random() * 10);
+       int num [][] = new int [3][3];
+       boolean trava = false;
+       for(int i = 0; i < 3; i++){
+           for(int j = 0; j < 3; j++){
+               System.out.print("Ingresa el elemente: " + (i+1) + "," + (j+1) + ": ");
+               num[i][j] = leer.nextInt();
            }
        }
        System.out.println("Matriz A: ");
-       for(int i = 0; i < 4; i++){
-           for(int j = 0; j < 4; j++){
+       for(int i = 0; i < 3; i++){
+           for(int j = 0; j < 3; j++){
                System.out.print(num[i][j] + "    ");
            }
            System.out.println("");
        }
        System.out.println("Mateiz A transpuesta: ");
-       for(int j = 0; j < 4; j++){
-           for(int i = 0; i < 4; i++){
+       for(int j = 0; j < 3; j++){
+           for(int i = 0; i < 3; i++){
                System.out.print(num[i][j] + "    ");
            }
            System.out.println("");   
         }
+       for(int j = 0; j < 3; j++){
+           for(int i = 0; i < 3; i++){
+               trava = (num[i][j] == -(num[j][i]));
+           }  
+        }
+        System.out.println("la matriz es Antitransversal: " + trava);
      
     }
 
